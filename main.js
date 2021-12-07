@@ -8,11 +8,11 @@ function find_location() {
 
 function register_existUser() {
 console.log("some")
-    document.getElementById("existUser").display = block ;
-}
+  document.getElementById("existUser").style.display = "block";
+  }
 
 function register_newUser() {
-    document.getElementById("newUser").display = block ;
+    document.getElementById("newUser").style.display = "block" ;
 }
 
 
