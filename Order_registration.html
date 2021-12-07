@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mainCss.css">
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/3a10c9cc85.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Are We?</title>
+</head>
+<body>
+    <div class="Container">
+        <div  class="header">
+            <span class="MCH">MAMA  Cookies</span>
+            <i class="fas fa-cookie" onclick="change_location('main.html')"></i>
+            <i class="fas fa-phone" onclick="change_location('ContactUs.html')"></i>
+            <i class="fas fa-shopping-cart"  onclick="change_location('Cart.html')"></i>
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="main">
+            <h1>הזמנה </h1>
+            <div class="textBox">
+             <div>
+                    <button id="existBtn" onclick="register_existUser()" >משתמש קיים</button>
+                    <button id="newBtn" onclick="register_newUser()" >משתמש חדש</button>
+                </div>
+                <br>
+                <div>
+                    <p>המיקום הקרוב ביותר אליך הוא :</p>
+                    <p>סניף תל אביב דיזניגוף 205, טל' - 052-9856147 </p>
+                </div>
+                <br>
+                <div>
+                    <p>עלות המשלוח למיקומך :</p>
+                    <p>20 ש"ח </p>
+                </div>
+                <br>
+                <div>
+                    <p>עלות כולל משלוח :</p>
+                    <p>95 ש"ח </p>
+                </div>
+                <br>
+                    <button id="creditBtn" onclick="change_location('payment.html')">תשלום באשראי</button>
+                    <button id="chashBtn">תשלום במזומן</button>
+            </div>
+        </div>
+            </div>
+
+        </div>
+                <div id="existUser">
+                    <h1>משתמש קיים </h1>
+                    <div class="textBox">
+                        <form action="">
+                            <table>
+                                 <td class="shownD">
+                                      <label for="EmailC"> כתובת דוא"ל </label>
+                                  </td>
+                                 <td>
+                                     <label for="EmailC" class="hiddenD"> כתובת דוא"ל </label>
+                                     <input type="text" name="EmailC" id="EmailC" />
+                                  </td>
+                                 <td class="shownD">
+                                     <label for="EmailC"> סיסמא </label>
+                                  </td>
+                                 <td>
+                                      <label for="EmailC" class="hiddenD"> סיסמא </label>
+                                      <input type="text" name="passEmailC" id="passEmailC" />
+                                  </td>
+                    </table>
+                </form>
+           </div>
+        </div>
+
+                <div id="newUser">
+                    <h1>משתמש חדש </h1>
+                    <div class="textBox">
+                        <form action="">
+                            <table>
+                                <tr>
+                                  <td class="shownD">
+                                      <label for="NameC"> שם מלא </label>
+                                   </td>
+                                <td>
+                                      <label for="NameC" class="hiddenD"> שם מלא </label>
+                                      <input type="text" name="NameC" id="NameC" />
+                                  </td>
+                               </tr>
+                                 <td class="shownD">
+                                      <label for="EmailNewC"> כתובת דוא"ל </label>
+                                  </td>
+                                 <td>
+                                     <label for="EmailNewC" class="hiddenD"> כתובת דוא"ל </label>
+                                     <input type="text" name="EmailNewC" id="EmailNewC" />
+                                  </td>
+                                <tr>
+                                  <td class="shownD">
+                                      <label for="PhoneC"></label> טלפון </label>
+                                   </td>
+                                  <td>
+                                      <label for="PhoneC" class="hiddenD"> טלפון </label>
+                                      <input type="text" name="PhoneC" id="PhoneC" /><br /> <br />
+                                   </td>
+                                </tr>
+                                 <td class="shownD">
+                                     <label for="passEmailNewC"> סיסמא </label>
+                                  </td>
+                                 <td>
+                                      <label for="passEmailNewC" class="hiddenD"> סיסמא </label>
+                                      <input type="text" name="passEmailNewC" id="passEmailNewC" />
+                                  </td>
+                                 <td class="shownD">
+                                     <label for="pass2EmailNewC"> סיסמא שנית </label>
+                                  </td>
+                                 <td>
+                                      <label for="pass2EmailNewC" class="hiddenD"> סיסמא שנית </label>
+                                      <input type="text" name="pass2EmailNewC" id="pass2EmailNewC" />
+                                  </td>
+                    </table>
+                </form>
+                        <button id="createUBtn">צור משתמש חדש</button>
+               </div>
+           </div>
+
+
+</body>
+</html>
